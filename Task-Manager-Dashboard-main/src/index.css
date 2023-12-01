@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(241, 241, 241, 0.972);
+}
+input {
+  padding: 20px;
+  width: 90%;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #eee;
+  outline: none;
+  margin: 20px;
+  font-size: medium;
+}
+h1 {
+  padding: 10px;
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2 em;
+}
+.delete {
+  margin: 0 5px;
+  color: rgb(214, 214, 214);
+  height: fit-content;
+  position: absolute;
+  right: 20px;
+}
+.delete:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(0, -1px);
+  }
+}
